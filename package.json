@@ -9,6 +9,7 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.12",
     "@fortawesome/react-fontawesome": "0.0.19",
     "bootstrap": "^4.1.1",
+    "deploy-aws-s3-cloudfront": "^0.2.9",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-parallax": "^1.7.0",
@@ -19,6 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+		"deploy-dev": "npm run build && deploy-aws-s3-cloudfront --source=./build/ --bucket=pack45dev --non-interactive",
+		"deploy-prod": "npm run build && deploy-aws-s3-cloudfront --source=./build/ --bucket=pack45.org --non-interactive --distribution=E273G5WYFMWZUL"
   }
 }
