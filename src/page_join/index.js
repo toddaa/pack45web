@@ -14,24 +14,17 @@ const JoinInfo = () => (
     <section className="join">
         <div className="container">
             <div className="row">
-                <div className="col-md-12">
-                    <div className="row">
-                        <div className="col-md-1 text-center">
-                        {iconCalendar}
-                        </div>
-                        <div className="col-md-11">
-                            <h2>Spring 2018 Joining Night</h2>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="offset-md-1 col-md-11">
-                            <h5>We invite you and your children to join us on Friday, June 1, 2018 at the First Congregational Church in Charlotte for an informational meeting about joining Cub Scouts with Pack 45.
-                                We want you, your children, and your family to be completely comfortable with joining our Pack before we collect any fees or file your registration.</h5>
-                            <h5>Elegible children should be going into kindergarden through 5th grade in the Fall of 2018.</h5>
-                            <h5>We would love to meet you in order to provide a rundown of our yearly events and activities as well as answer any questions or concerns that you may have.</h5>
-                            <h5>We look forward to visit with you!</h5>
-                        </div>
-                    </div>
+                <div className="col-md-2 text-center">
+                    {iconCalendar}
+                </div>
+                <div className="col-md-10">
+                    <h3 className="d-none d-sm-block">Fall 2018 Joining Night</h3>
+                    <h3 className="d-block d-sm-none" style={{textAlign:'center'}}>Fall 2018 Joining Night</h3>
+                    <h4>We invite you and your children (boys and girls) to join us on Thursday, September 6, 2018 at the First Congregational Church in Charlotte for an informational meeting about joining Cub Scouts with Pack 45.
+                        We want you, your children, and your family to be completely comfortable with joining our Pack before we collect any fees or file your registration.</h4>
+                    <h4>Elegible children should be going into kindergarden through 5th grade in the Fall of 2018.</h4>
+                    <h4>We would love to meet you in order to provide a rundown of our yearly events and activities as well as answer any questions or concerns that you may have.</h4>
+                    <h4>We look forward to visiting with you!</h4>
                 </div>
             </div>
         </div>
@@ -58,7 +51,7 @@ class JoinPage extends Component {
         return (  
             <div>
                 <Header /> 
-                <JoinComponent />
+                <JoinInfo />
                 <Footer />
             </div>
         )
