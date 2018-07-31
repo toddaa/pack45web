@@ -1,18 +1,35 @@
 import React from 'react';
-import { Parallax } from 'react-parallax';
+import { Parallax, Background } from 'react-parallax';
 import Contact from '../sect_contact';
 import Join from '../sect_join';
 import About from '../sect_about';
+
+import DerbyPic1 from './DerbyPic40.jpg';
+import DerbyPic2 from './DerbyPic44.jpg';
+import DerbyPic3 from './DerbyPic45.jpg';
 
 const MainContent = () => (
     <div>
     <Parallax
       blur={{ min: -15, max: 15 }}
-      bgImage={require('./9627.jpg')}
-      bgImageAlt="Derby"
       strength={500}
     >
       <div style={{ height: '600px' }} />
+      <Background className="custom-bg">
+        <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel" style={{width:'100%'}}>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src={DerbyPic1} alt="Super Hero Cubs" />
+            </div>
+            <div className="carousel-item">
+              <img src={DerbyPic2} alt="Super Repelling Leader" />
+            </div>
+            <div className="carousel-item">
+              <img src={DerbyPic3} alt="Super Repelling Leader" />
+            </div>
+          </div>
+        </div>
+      </Background>
     </Parallax>
     <About />
     <Parallax
