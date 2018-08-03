@@ -14,7 +14,8 @@ header {
 	text-align: center;*/
 	@media screen and (min-width: 575px) { 
 		height:265px;
-    }
+	}
+	/* animation: animatedBackground 10s linear infinite; */
 }
 .packLogo{
 	width:33%;
@@ -28,14 +29,19 @@ header {
 h5{
 	margin-top:30px !important;
 }
-.carousel {
+header .carousel {
 	background-image: url("hero_bkg.png");
 }
 .flip{
 	-moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
 }
