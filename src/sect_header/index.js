@@ -66,8 +66,7 @@ const Header = () => (
 					<img className="packLogo" src={Pack45Logo} alt="Cub Scout Pack 45 Logo" />
 				</div>
 				<img className="d-block d-sm-none" src={Pack45Logo} alt="Cub Scout Pack 45 Logo" style={{width:'80%', height:'100%', margin:'0 auto'}} />
-				<h5>Pack 45 serves boys and girls in kindergarten through fifth grades in the Charlotte, Michigan area.<br/>
-					We are proudly chartered with the Water and Woods Field Service Council of the Boy Scouts of America by First Congregational Church.</h5>
+				<h5>Pack 45 serves boys and girls in kindergarten through fifth grades in the Charlotte, Michigan area.  We are proudly chartered with the Water and Woods Field Service Council of the Boy Scouts of America by First Congregational Church.</h5>
 			</div>
 		</div>
 	</header> 
