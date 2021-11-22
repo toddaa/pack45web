@@ -25,6 +25,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy-dev": "npm run build && deploy-aws-s3-cloudfront --source=./build/ --bucket=pack45dev --non-interactive",
-    "deploy-prod": "npm run build && deploy-aws-s3-cloudfront --source=./build/ --bucket=pack45.org --non-interactive --distribution=E273G5WYFMWZUL"
+    "deploy-prod": "npm run build && deploy-aws-s3-cloudfront --source=./build/ --bucket=pack45.org --non-interactive --distribution=E273G5WYFMWZUL",
+    "lint": "standard"
+  },
+  "devDependencies": {
+    "standard": "^16.0.4"
   }
 }
