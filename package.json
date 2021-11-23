@@ -30,5 +30,10 @@
   },
   "devDependencies": {
     "standard": "^16.0.4"
+  },
+  "standard": {
+    "ignore": [
+      "registerServiceWorker.js"
+    ]
   }
 }

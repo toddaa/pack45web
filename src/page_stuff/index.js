@@ -10,14 +10,17 @@ import IMG_1826 from './IMG_1826.jpeg'
 import IMG_1840 from './IMG_1840.jpeg'
 import IMG_2099 from './IMG_2099.jpeg'
 import IMG_2107 from './IMG_2107.jpeg'
+import './stuff.css'
 
 const StuffObject = (props) => {
   const { title, image } = props
 
   return (
     <div className='col-md-6'>
-      <img src={image} width='300' alt={title} />
-      <h4>{title}</h4>
+      <div className='centered'>
+        <img src={image} className='image' alt={title} />
+      </div>
+      <h5>{title}</h5>
     </div>
   )
 }
@@ -29,6 +32,7 @@ const StuffContent = () => (
         <div className='col-md-12'>
           <h3 className='d-none d-sm-block'>Pack 45 Stuff</h3>
           <h3 className='d-block d-sm-none' style={{ textAlign: 'center' }}>Pack 45 Stuff</h3>
+          <h5>The following things can be made on-demand.  Email Aaron Todd at toddaa@gmail.com for more information.</h5>
         </div>
       </div>
       <div className='row'>
@@ -40,11 +44,11 @@ const StuffContent = () => (
         <StuffObject title='Thank You Dangle' image={IMG_1819} />
       </div>
       <div className='row'>
-        <StuffObject title='Bracelet' image={IMG_2107} />
-        <StuffObject title='Name Tag' image={IMG_1826} />
+        <StuffObject title='Eat. Sleep. Scout. Repeat. Bracelet' image={IMG_2107} />
+        <StuffObject title='Position Name Tag' image={IMG_1826} />
       </div>
       <div className='row'>
-        <StuffObject title='Frame' image={IMG_2099} />
+        <StuffObject title='11x14 Photo Matte' image={IMG_2099} />
         <StuffObject title='Pack 45 Tumbler' image={IMG_1840} />
       </div>
       <div className='row'>

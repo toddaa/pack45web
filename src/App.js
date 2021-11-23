@@ -50,16 +50,12 @@ class App extends Component {
     setTimeout(() => this.setState({ loading: false }), 1500)
   }
 
-  componentWillMount () {
-    window.addEventListener('resize', this.handleWindowSizeChange)
+  UNSAFE_componentWillMount () {
+    window.addEventListener('resize', this.setState({ width: window.innerWidth }))
   }
 
   componentWillUnmount () {
-    window.removeEventListener('resize', this.handleWindowSizeChange)
-  }
-
-  handleWindowSizeChange () {
-    this.setState({ width: window.innerWidth })
+    window.removeEventListener('resize', this.setState({ width: window.innerWidth }))
   }
 
   render () {
