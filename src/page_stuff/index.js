@@ -10,6 +10,7 @@ import IMG_1826 from './IMG_1826.jpeg'
 import IMG_1840 from './IMG_1840.jpeg'
 import IMG_2099 from './IMG_2099.jpeg'
 import IMG_2107 from './IMG_2107.jpeg'
+import IMG_2112 from './IMG_2112.jpeg'
 import './stuff.css'
 
 const StuffObject = (props) => {
@@ -53,7 +54,7 @@ const StuffContent = () => (
       </div>
       <div className='row'>
         <StuffObject title='Summer Camp Dangle' image={IMG_1823} />
-        <StuffObject title='Arrow of Light Plaque' image={IMG_1824} />
+        <StuffObject title='Arrow of Light Plaque' image={IMG_2112} />
       </div>
 
     </div>
