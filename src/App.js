@@ -18,6 +18,7 @@ const RootPage = () => (
       <MainContent />
       <Footer />
       <Route path='/join' component={JoinPage} />
+      <Route path='/stuff' component={StuffPage} />
     </div>
   </div>
 )
@@ -29,6 +30,7 @@ const MobilePage = () => (
       <MobileContent />
       <Footer />
       <Route path='/join' component={JoinPage} />
+      <Route path='/stuff' component={StuffPage} />
     </div>
   </div>
 )
