@@ -1,7 +1,11 @@
 .image {
-    max-width: 300px;
     max-height: 300px;
+    object-fit: contain;
 }
 .centered {
     text-align: center;
+}
+.stuffCard{
+    width: 47%;
+    margin:1rem;
 }
