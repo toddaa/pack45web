@@ -7,7 +7,7 @@ on:
 jobs:
 
   test:
-    uses: toddaa/pack45web/.github/workflows/ci.yml@stuff
+    uses: toddaa/pack45web/.github/workflows/ci.yaml@stuff
 
   build:
     name: Build Task
