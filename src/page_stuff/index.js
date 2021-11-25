@@ -14,16 +14,15 @@ import IMG_2107 from './IMG_2107.jpeg'
 import IMG_2112 from './IMG_2112.jpeg'
 import './stuff.css'
 
-
 const StuffObject = (props) => {
   const { title, image } = props
 
   return (
     <div className='card stuffCard'>
-      <img className="card-img-top image" src={image} alt={title} />
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <img className='card-img-top image' src={image} alt={title} />
+      <div className='card-body'>
+        <h5 className='card-title'>{title}</h5>
+        <p className='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
   )
