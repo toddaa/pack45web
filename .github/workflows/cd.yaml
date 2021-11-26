@@ -52,5 +52,6 @@ jobs:
         with:
           name: build-artifact
 
-      - run: |
-        ls -la
+      - name: Deploy to S3
+        run: |
+          ls -la
