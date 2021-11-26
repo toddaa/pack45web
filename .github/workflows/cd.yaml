@@ -31,14 +31,44 @@ jobs:
           path: |
             ./build
 
-  deploy:
+  deploy-test:
     name: Deploy Test
 
     runs-on: ubuntu-latest
 
     needs: build
 
-    environment: test
+    environment:
+      name: test
+      url: http://pack45dev.s3-website-us-east-1.amazonaws.com/
+
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: build-artifact
+
+      - name: Deploy to S3
+        run: |
+          ls -la
+          aws s3 cp . s3://pack45dev/ --recursive
+
+  deploy-prod:
+    name: Deploy Test
+
+    runs-on: ubuntu-latest
+
+    needs: build
+
+    environment:
+      name: prod
+      url: https://pack45.org
 
     steps:
       - name: Configure AWS credentials
