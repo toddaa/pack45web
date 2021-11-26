@@ -55,3 +55,4 @@ jobs:
       - name: Deploy to S3
         run: |
           ls -la
+          aws s3 cp . s3://pack45dev/
