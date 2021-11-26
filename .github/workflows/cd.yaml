@@ -60,7 +60,7 @@ jobs:
           aws s3 cp . s3://pack45dev/ --recursive
 
   deploy-prod:
-    name: Deploy Test
+    name: Deploy PROD
 
     runs-on: ubuntu-latest
 
