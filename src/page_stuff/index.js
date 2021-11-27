@@ -10,7 +10,7 @@ import IMG_1825 from './IMG_1825.jpeg'
 import IMG_1826 from './IMG_1826.jpeg'
 import IMG_1840 from './IMG_1840.jpeg'
 import IMG_2099 from './IMG_2099.jpeg'
-import IMG_2107 from './IMG_2107.jpeg'
+import IMG_2114 from './IMG_2114.jpeg'
 import IMG_2112 from './IMG_2112.jpeg'
 import './stuff.css'
 
@@ -47,7 +47,7 @@ const StuffContent = () => (
         <StuffObject title='Thank You Dangle' image={IMG_1819} />
       </div>
       <div className='row'>
-        <StuffObject title='Eat. Sleep. Scout. Repeat. Bracelet' image={IMG_2107} />
+        <StuffObject title='Eat. Sleep. Scout. Repeat. Bracelet' image={IMG_2114} />
         <StuffObject title='Position Name Tag' image={IMG_1826} />
       </div>
       <div className='row'>
