@@ -2,6 +2,8 @@ name: NodeJS CD
 
 on:
   release:
+    branches:
+      - master
     types: [published]
 
 jobs:
@@ -82,7 +84,10 @@ jobs:
         with:
           name: build-artifact
 
-      - name: Deploy to S3
-        run: |
-          ls -la
-          aws s3 cp . s3://pack45dev/ --recursive
+      - name: Deploy to S3 & Invalidate CloudFront Distribution
+        uses: lbertenasco/s3-deploy@v1
+        with:
+            folder: .
+            bucket: ${{ secrets.PROD_S3_BUCKET }}
+            dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+            invalidation: / *
