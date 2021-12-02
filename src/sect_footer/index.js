@@ -30,7 +30,6 @@ const Footer = () => (
       <p className='d-block d-sm-none'>First Congregational Church<br />106 Bostwick Street, Charlotte, MI</p>
       <p className='d-block d-sm-none'>{iconCopyright} Copyright 2016 | Cub Scout Pack 45<br />All Rights Reserved</p>
       <p className='d-block d-sm-none'><a href='mailto:info@pack45.org'>{iconEnvelope} info@pack45.org</a><br /><a href='http://facebook.com/pack45bsa'>{iconFacebook} @pack45bsa</a></p>
-      <p className='d-block d-sm-none'><Link to='/stuff'>Stuff</Link></p>
     </div>
   </footer>
 )
